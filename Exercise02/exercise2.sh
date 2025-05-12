@@ -33,7 +33,7 @@ for filename in ./*.txt; do
     # delete first csplit file because it contains the article headline
     rm '00.txt'
 
-    for article in ./*.txt; do
+    for article in ./*.txt; do 
         if [[ "$article" == "./*.txt" ]]; then
             continue
         fi
@@ -51,8 +51,10 @@ done
 
 # 1e
 for file in *; do
+    # delete all txt files
     if [ -f "$file" ]; then
         rm "$file"
+    # move folders to parent folder
     elif [ -d "$file" ]; then
         mv "$file" ..
     fi

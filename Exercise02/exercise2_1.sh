@@ -10,6 +10,7 @@ curl -o gg.txt https://raw.githubusercontent.com/levinalex/deutsche_verfassungen
 # credits: a little bit of chatgpt and alot of thinking
 # //!d = //=match previous regex !=not d=delete
 # /b = branching. If no branch is defined, it will skip to the end
+# -e expression
 sed -e '/^I$/b' -e '0, /Die Grundrechte/{//!d}' gg.txt > gg_bereinigt.txt
 
 # 1c

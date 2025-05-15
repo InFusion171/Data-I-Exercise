@@ -69,5 +69,3 @@ rm -r Kapitel
 # 1f
 cd ..
 tar -cf GG.tar GG 
-
-
